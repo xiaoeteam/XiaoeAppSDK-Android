@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="user_name_empty_tip">"用户名不能为空！"</string>
+</resources>
