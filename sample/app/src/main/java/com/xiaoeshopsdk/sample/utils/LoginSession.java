@@ -13,6 +13,7 @@ public class LoginSession {
 
     public LoginSession(Context context) {
         mPreferences = context.getSharedPreferences("login", Context.MODE_PRIVATE);
+        clear();
     }
 
     public boolean isLoggedIn() {

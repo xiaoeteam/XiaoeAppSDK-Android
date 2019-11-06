@@ -201,6 +201,7 @@ public class ShowWebActivity extends AppCompatActivity implements View.OnClickLi
     protected void onDestroy() {
         super.onDestroy();
         xiaoEWeb.webLifeCycle().onDestroy();
+        xiaoEWeb.syncNot();
     }
 
     @Override
