@@ -3,7 +3,6 @@ package com.xiaoeshopsdk.sample.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
-
 import com.xiaoe.shop.webcore.XEToken;
 
 public class LoginSession {
