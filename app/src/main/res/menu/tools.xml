@@ -8,6 +8,11 @@
         android:title="分享"/>
 
     <item
+        android:id="@+id/logout"
+        app:showAsAction="ifRoom"
+        android:title="登出"/>
+
+    <item
         android:id="@+id/fresh"
         android:title="@string/fresh"
         android:icon="@drawable/ic_refresh_black_24dp"

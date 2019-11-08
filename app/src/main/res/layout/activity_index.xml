@@ -19,6 +19,14 @@
             android:textColor="#fff"
             android:text="演示Demo"/>
 
+        <TextView
+            android:id="@+id/user_logout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:text="登出"/>
+
     </androidx.appcompat.widget.Toolbar>
 
     <View

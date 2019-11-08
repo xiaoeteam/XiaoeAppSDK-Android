@@ -4,11 +4,11 @@ import android.app.Application;
 import com.xiaoe.shop.webcore.XiaoEWeb;
 import com.xiaoeshopsdk.sample.utils.Const;
 
-public class ShopWebApplication extends Application{
+public class SdkDemoApplication extends Application{
 
     @Override
     public void onCreate(){
         super.onCreate();
-        XiaoEWeb.init(this, Const.APP_ID, Const.CLIENT_ID, XiaoEWeb.WebViewType.Android);
+        XiaoEWeb.init(this, Const.APP_ID, Const.CLIENT_ID, XiaoEWeb.WebViewType.X5);
     }
 }
