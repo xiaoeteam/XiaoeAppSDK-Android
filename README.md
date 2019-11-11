@@ -1,3 +1,7 @@
+[![Version](https://img.shields.io/cocoapods/v/XEShopSDK.svg?style=flat)](https://github.com/xiaoeteam/XiaoeAppSDK-Android)
+[![License](https://img.shields.io/cocoapods/l/PodDemo.svg?style=flat)](https://github.com/xiaoeteam/XiaoeAppSDK-Android)
+[![Platform](https://img.shields.io/cocoapods/p/PodDemo.svg?style=flat)](https://github.com/xiaoeteam/XiaoeAppSDK-Android)
+
 <p>
 <a href="https://github.com/xiaoeteam"><img alt="小鹅通logo" width="130px" src="https://www.xiaoe-tech.com/images/pageBase/logo_blue@2x.png" alt="xiaoe">
 </a>
