@@ -21,7 +21,7 @@ allprojects {
 
 在子项目build.gradle的dependencies中根据需求引入依赖:
 ```
-implementation 'com.xiaoe.shop:webcore:1.0.2'
+implementation 'com.xiaoe.shop:webcore:1.0.4'
 ```
 ## 文档
 [接入文档](https://github.com/xiaoeteam/XiaoeAppSDK-Android/wiki "接入文档")
