@@ -18,7 +18,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url  "https://dl.bintray.com/xiaoeteam/xiaoeSDK"
+        }
     }
 }
 
