@@ -97,6 +97,10 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
                         //H5分享请求回调，通过 response.getResponseData() 获取分享的数据，这里三方 APP 自行分享登录方法
                         Toast.makeText(XeSdkDemoActivity.this, response.getResponseData(), Toast.LENGTH_SHORT).show();
                         break;
+
+                    case JsInteractType.TITLE_RECEIVE:
+                        //H5标题回调，通过 response.getResponseData() 获取标题
+                        break;
                 }
             }
         });
