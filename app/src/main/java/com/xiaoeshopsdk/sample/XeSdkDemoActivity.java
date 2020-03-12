@@ -2,7 +2,6 @@ package com.xiaoeshopsdk.sample;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -100,8 +99,17 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
                         break;
 
                     case JsInteractType.TITLE_RECEIVE:
-                        Log.d("TITLE_RECEIVE22", "can go back = " + xiaoEWeb.canGoBack());
                         //H5标题回调，通过 response.getResponseData() 获取标题
+                        break;
+
+                    case JsInteractType.NOTICE_OUT_LINK_ACTION:
+                        //sdk通知需要外部打开的链接回调，通过 response.getResponseData() 获取外链
+                        //原来后台自定义链接：
+                        //1.本来不带参数的  http://www.baidu.com
+                        //2.本来带参数的  http://www.baidu.com?xxx=xxx
+                        //需要sdk通知外部打开，拼装带参数needoutlink=1
+                        //1.本来不带参数的 http://www.baidu.com?needoutlink=1
+                        //2.本来带参数的  http://www.baidu.com?xxx=xxx&needoutlink=1
                         break;
                 }
             }
