@@ -1,7 +1,7 @@
 package com.xiaoeshopsdk.sample;
 
 import android.app.Application;
-import com.xiaoe.shop.webcore.XiaoEWeb;
+import com.xiaoe.shop.webcore.core.XiaoEWeb;
 import com.xiaoeshopsdk.sample.utils.Const;
 
 public class SdkDemoApplication extends Application{

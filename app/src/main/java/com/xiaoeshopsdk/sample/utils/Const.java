@@ -8,7 +8,7 @@ public class Const {
 	//Demo测试店铺的登录接口（三方 App 用户需要实现SDK的登录，具体请看文档）
 	public static final String SDK_LOGIN_URL = "https://app38itOR341547.sdk.xiaoe-tech.com/sdk_api/xe.account.login.test/1.0.0";
 	//Demo测试店铺的Url（三方 App 用户购买小鹅店铺sdk获取店铺Url  替换）
-	public static final String SHOP_URL = "https://app38itOR341547.sdk.xiaoe-tech.com/";
+	public static final String SHOP_URL = "https://app38itOR341547.h5.xiaoeknow.com";
 	//Demo测试店铺的appID（三方 App 用户注册使用小鹅店铺，取得店铺appID  替换）
 	public static final String APP_ID = "app38itOR341547";
 	//Demo测试店铺的sdkAppId（三方 App 用户购买小鹅店铺sdk获取sdkAppId 替换）

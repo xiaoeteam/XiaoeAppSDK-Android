@@ -1,5 +1,6 @@
 package com.xiaoeshopsdk.sample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.KeyEvent;
@@ -13,14 +14,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import com.xiaoe.shop.webcore.XEToken;
-import com.xiaoe.shop.webcore.XiaoEWeb;
-import com.xiaoe.shop.webcore.bridge.JsBridgeListener;
-import com.xiaoe.shop.webcore.bridge.JsCallbackResponse;
-import com.xiaoe.shop.webcore.bridge.JsInteractType;
+import com.xiaoe.shop.webcore.core.XEToken;
+import com.xiaoe.shop.webcore.core.XiaoEWeb;
+import com.xiaoe.shop.webcore.core.bridge.JsBridgeListener;
+import com.xiaoe.shop.webcore.core.bridge.JsCallbackResponse;
+import com.xiaoe.shop.webcore.core.bridge.JsInteractType;
 import com.xiaoeshopsdk.sample.net.LoginEntity;
 import com.xiaoeshopsdk.sample.net.OkHttpHelper;
 import com.xiaoeshopsdk.sample.net.SimpleCallBack;
@@ -60,7 +62,7 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onResume() {
         super.onResume();
-        xiaoEWeb.webLifeCycle().onResume();
+        xiaoEWeb.onResume();
     }
 
     private void initView() {
@@ -159,7 +161,7 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
                 return true;
             case R.id.fresh:
                 if (xiaoEWeb != null)
-                    xiaoEWeb.getUrlLoader().reload();
+                    xiaoEWeb.reload();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -169,13 +171,13 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onPause() {
         super.onPause();
-        xiaoEWeb.webLifeCycle().onPause();
+        xiaoEWeb.onPause();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        xiaoEWeb.webLifeCycle().onDestroy();
+        xiaoEWeb.onDestroy();
     }
 
     @Override
@@ -183,6 +185,12 @@ public class XeSdkDemoActivity extends AppCompatActivity implements View.OnClick
         if (xiaoEWeb.handlerKeyEvent(keyCode, event))
             return true;
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        xiaoEWeb.onActivityResult(requestCode, resultCode, data);
     }
 
     private void doLogin(String userName){

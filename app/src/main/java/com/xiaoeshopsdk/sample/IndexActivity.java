@@ -7,7 +7,8 @@ import android.view.Window;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.xiaoe.shop.webcore.XiaoEWeb;
+
+import com.xiaoe.shop.webcore.core.XiaoEWeb;
 
 public class IndexActivity extends AppCompatActivity {
 
