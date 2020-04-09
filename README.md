@@ -3,7 +3,6 @@
 </a>
 </p>
 
-[![pub package](https://img.shields.io/bintray/v/xiaoeteam/xiaoeSDK/webcore?style=for-the-badge)](https://bintray.com/xiaoeteam/xiaoeSDK/webcore)
 [![webSite](https://img.shields.io/badge/%E5%B0%8F%E9%B9%85%E9%80%9A-%E5%AE%98%E7%BD%91-blue?style=for-the-badge)](https://www.xiaoe-tech.com/)
 
 ## 简述
