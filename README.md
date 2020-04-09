@@ -1,6 +1,4 @@
 <p>
-<a href="https://github.com/xiaoeteam"><img alt="小鹅通logo" width="130px" src="https://www.xiaoe-tech.com/images/pageBase/logo_blue@2x.png" alt="xiaoe">
-</a>
 </p>
 
 [![webSite](https://img.shields.io/badge/%E5%B0%8F%E9%B9%85%E9%80%9A-%E5%AE%98%E7%BD%91-blue?style=for-the-badge)](https://www.xiaoe-tech.com/)
