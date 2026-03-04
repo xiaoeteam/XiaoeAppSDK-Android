@@ -19,8 +19,8 @@ allprojects {
 
 在子项目build.gradle的dependencies中根据需求引入依赖:
 ```
-implementation 'com.xiaoetong.android.sdk:webcore:2.2.19'//最新版本号
-implementation 'com.tencent.tbs.tbssdk:sdk:43993'
+implementation 'com.xiaoetong.android.sdk:webcore:2.2.73'//最新版本号
+implementation 'com.tencent.tbs.tbssdk:sdk:44115'
 ```
 ## 文档
 [接入文档](https://github.com/xiaoeteam/XiaoeAppSDK-Android/wiki "接入文档")
